@@ -1,0 +1,10 @@
+Order Confirmation
+===============================================
+ 
+<% @order.line_items.each do |item| %>
+<%= Product.find_by(id: item.product_id).name %>
+<% end %>
+ 
+Order total: <%= @order.total_cents / 100.0 %>
+ 
+Thanks for buying and have a great day!
