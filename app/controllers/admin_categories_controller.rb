@@ -1,2 +1,0 @@
-class AdminCategoriesController < ApplicationController
-end
