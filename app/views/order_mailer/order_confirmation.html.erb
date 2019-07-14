@@ -7,7 +7,7 @@
     <h1>Order Confirmation</h1>
     <p>
       <% @order.line_items.each do |item| %>
-        <%= Product.find_by(id: item.product_id).name %>
+        <%= item.quantity %>x <%= Product.find_by(id: item.product_id).name %>
       <% end %>
     </p>
     <p>
